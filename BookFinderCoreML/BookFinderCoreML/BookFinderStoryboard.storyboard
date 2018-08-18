@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B7m-ba-COa">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Book Finder View Controller-->
+        <scene sceneID="ZtK-iO-Kze">
+            <objects>
+                <viewController storyboardIdentifier="VisionBookViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="B7m-ba-COa" customClass="BookFinderViewController" customModule="BookFinderCoreML" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Fr-pC-Kf9"/>
+                        <viewControllerLayoutGuide type="bottom" id="iFF-KH-nM3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sOh-Sl-W1i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x3I-SL-WSp">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZkA-jQ-Xqm">
+                                <rect key="frame" x="4" y="612" width="367" height="51"/>
+                                <subviews>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9z-ZN-Orj">
+                                        <rect key="frame" x="16" y="16" width="335" height="19"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="16"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="f9z-ZN-Orj" secondAttribute="trailing" constant="16" id="QhX-C1-cKa"/>
+                                    <constraint firstAttribute="bottom" secondItem="f9z-ZN-Orj" secondAttribute="bottom" constant="16" id="iAi-V8-i13"/>
+                                    <constraint firstItem="f9z-ZN-Orj" firstAttribute="leading" secondItem="ZkA-jQ-Xqm" secondAttribute="leading" constant="16" id="vay-Ay-hHt"/>
+                                    <constraint firstItem="f9z-ZN-Orj" firstAttribute="top" secondItem="ZkA-jQ-Xqm" secondAttribute="top" constant="16" id="yBa-0i-SWe"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="x3I-SL-WSp" secondAttribute="bottom" id="4J2-r4-dyK"/>
+                            <constraint firstItem="ZkA-jQ-Xqm" firstAttribute="leading" secondItem="sOh-Sl-W1i" secondAttribute="leading" constant="4" id="KRS-T6-hE4"/>
+                            <constraint firstItem="iFF-KH-nM3" firstAttribute="top" secondItem="ZkA-jQ-Xqm" secondAttribute="bottom" constant="4" id="QOL-To-sTf"/>
+                            <constraint firstItem="x3I-SL-WSp" firstAttribute="top" secondItem="3Fr-pC-Kf9" secondAttribute="bottom" id="drM-wx-Qh9"/>
+                            <constraint firstAttribute="trailing" secondItem="x3I-SL-WSp" secondAttribute="trailing" id="ezf-CA-ECP"/>
+                            <constraint firstAttribute="trailing" secondItem="ZkA-jQ-Xqm" secondAttribute="trailing" constant="4" id="feD-eP-pkC"/>
+                            <constraint firstItem="x3I-SL-WSp" firstAttribute="leading" secondItem="sOh-Sl-W1i" secondAttribute="leading" id="sLn-Nn-u46"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1d8-A6-hHT"/>
+                    </view>
+                    <connections>
+                        <outlet property="predictLabel" destination="f9z-ZN-Orj" id="4IY-vF-Ll8"/>
+                        <outlet property="previewView" destination="x3I-SL-WSp" id="JYT-IN-YhH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GBs-r6-8tc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-81" y="211"/>
+        </scene>
+    </scenes>
+</document>

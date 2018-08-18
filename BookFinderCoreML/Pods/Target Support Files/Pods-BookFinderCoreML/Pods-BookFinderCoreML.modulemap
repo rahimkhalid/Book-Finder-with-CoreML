@@ -1,0 +1,6 @@
+framework module Pods_BookFinderCoreML {
+  umbrella header "Pods-BookFinderCoreML-umbrella.h"
+
+  export *
+  module * { export * }
+}

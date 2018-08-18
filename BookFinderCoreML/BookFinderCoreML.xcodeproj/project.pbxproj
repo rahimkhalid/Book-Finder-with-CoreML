@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6DC17996E68202F2BC36AC6F /* Pods_BookFinderCoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5002A8C06496CBC97A1EA93F /* Pods_BookFinderCoreML.framework */; };
+		ED0112EC2128760000E9A34A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0112EB2128760000E9A34A /* AppDelegate.swift */; };
+		ED0112EE2128760000E9A34A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0112ED2128760000E9A34A /* ViewController.swift */; };
+		ED0112F32128760100E9A34A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED0112F22128760100E9A34A /* Assets.xcassets */; };
+		ED0112F62128760100E9A34A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED0112F42128760100E9A34A /* LaunchScreen.storyboard */; };
+		ED011301212878CA00E9A34A /* bookImageModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = ED0112FD212878C900E9A34A /* bookImageModel.mlmodel */; };
+		ED011302212878CA00E9A34A /* BookFinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0112FE212878C900E9A34A /* BookFinderViewController.swift */; };
+		ED011303212878CA00E9A34A /* BookFinderStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED0112FF212878C900E9A34A /* BookFinderStoryboard.storyboard */; };
+		ED011304212878CA00E9A34A /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED011300212878CA00E9A34A /* ImageLoader.swift */; };
+		ED011310212878D300E9A34A /* BookDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED011306212878D300E9A34A /* BookDetailView.xib */; };
+		ED011311212878D300E9A34A /* BookDetailViewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED011307212878D300E9A34A /* BookDetailViewCollectionViewCell.swift */; };
+		ED011312212878D300E9A34A /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED011308212878D300E9A34A /* BookDetailView.swift */; };
+		ED011313212878D300E9A34A /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED011309212878D300E9A34A /* ApiService.swift */; };
+		ED011314212878D300E9A34A /* BookDetailViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED01130A212878D300E9A34A /* BookDetailViewCell.xib */; };
+		ED011315212878D300E9A34A /* bookDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED01130B212878D300E9A34A /* bookDetailModel.swift */; };
+		ED011316212878D300E9A34A /* VideoCameraType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED01130D212878D300E9A34A /* VideoCameraType.swift */; };
+		ED011317212878D300E9A34A /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED01130E212878D300E9A34A /* VideoCapture.swift */; };
+		ED011318212878D300E9A34A /* AVCaptureDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED01130F212878D300E9A34A /* AVCaptureDevice+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4B606310DE053CAFE81E94AB /* Pods-BookFinderCoreML.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookFinderCoreML.release.xcconfig"; path = "Pods/Target Support Files/Pods-BookFinderCoreML/Pods-BookFinderCoreML.release.xcconfig"; sourceTree = "<group>"; };
+		5002A8C06496CBC97A1EA93F /* Pods_BookFinderCoreML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookFinderCoreML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55C6CCF282C31CB43DEA5962 /* Pods-BookFinderCoreML.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookFinderCoreML.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookFinderCoreML/Pods-BookFinderCoreML.debug.xcconfig"; sourceTree = "<group>"; };
+		ED0112E82128760000E9A34A /* BookFinderCoreML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookFinderCoreML.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED0112EB2128760000E9A34A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ED0112ED2128760000E9A34A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ED0112F22128760100E9A34A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED0112F52128760100E9A34A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED0112F72128760100E9A34A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED0112FD212878C900E9A34A /* bookImageModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = bookImageModel.mlmodel; sourceTree = "<group>"; };
+		ED0112FE212878C900E9A34A /* BookFinderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookFinderViewController.swift; sourceTree = "<group>"; };
+		ED0112FF212878C900E9A34A /* BookFinderStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BookFinderStoryboard.storyboard; sourceTree = "<group>"; };
+		ED011300212878CA00E9A34A /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		ED011306212878D300E9A34A /* BookDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookDetailView.xib; sourceTree = "<group>"; };
+		ED011307212878D300E9A34A /* BookDetailViewCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookDetailViewCollectionViewCell.swift; sourceTree = "<group>"; };
+		ED011308212878D300E9A34A /* BookDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
+		ED011309212878D300E9A34A /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		ED01130A212878D300E9A34A /* BookDetailViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookDetailViewCell.xib; sourceTree = "<group>"; };
+		ED01130B212878D300E9A34A /* bookDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bookDetailModel.swift; sourceTree = "<group>"; };
+		ED01130D212878D300E9A34A /* VideoCameraType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCameraType.swift; sourceTree = "<group>"; };
+		ED01130E212878D300E9A34A /* VideoCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+		ED01130F212878D300E9A34A /* AVCaptureDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureDevice+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED0112E52128760000E9A34A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DC17996E68202F2BC36AC6F /* Pods_BookFinderCoreML.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		70E771A44023652D79D924B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55C6CCF282C31CB43DEA5962 /* Pods-BookFinderCoreML.debug.xcconfig */,
+				4B606310DE053CAFE81E94AB /* Pods-BookFinderCoreML.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BF5966AB12509CAB3B37F0D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5002A8C06496CBC97A1EA93F /* Pods_BookFinderCoreML.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED0112DF2128760000E9A34A = {
+			isa = PBXGroup;
+			children = (
+				ED0112EA2128760000E9A34A /* BookFinderCoreML */,
+				ED0112E92128760000E9A34A /* Products */,
+				70E771A44023652D79D924B0 /* Pods */,
+				BF5966AB12509CAB3B37F0D7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ED0112E92128760000E9A34A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED0112E82128760000E9A34A /* BookFinderCoreML.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED0112EA2128760000E9A34A /* BookFinderCoreML */ = {
+			isa = PBXGroup;
+			children = (
+				ED011305212878D300E9A34A /* bookDetailView */,
+				ED01130C212878D300E9A34A /* VideoCapture */,
+				ED0112FF212878C900E9A34A /* BookFinderStoryboard.storyboard */,
+				ED0112FE212878C900E9A34A /* BookFinderViewController.swift */,
+				ED0112FD212878C900E9A34A /* bookImageModel.mlmodel */,
+				ED011300212878CA00E9A34A /* ImageLoader.swift */,
+				ED0112EB2128760000E9A34A /* AppDelegate.swift */,
+				ED0112ED2128760000E9A34A /* ViewController.swift */,
+				ED0112F22128760100E9A34A /* Assets.xcassets */,
+				ED0112F42128760100E9A34A /* LaunchScreen.storyboard */,
+				ED0112F72128760100E9A34A /* Info.plist */,
+			);
+			path = BookFinderCoreML;
+			sourceTree = "<group>";
+		};
+		ED011305212878D300E9A34A /* bookDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				ED011306212878D300E9A34A /* BookDetailView.xib */,
+				ED011307212878D300E9A34A /* BookDetailViewCollectionViewCell.swift */,
+				ED011308212878D300E9A34A /* BookDetailView.swift */,
+				ED011309212878D300E9A34A /* ApiService.swift */,
+				ED01130A212878D300E9A34A /* BookDetailViewCell.xib */,
+				ED01130B212878D300E9A34A /* bookDetailModel.swift */,
+			);
+			path = bookDetailView;
+			sourceTree = "<group>";
+		};
+		ED01130C212878D300E9A34A /* VideoCapture */ = {
+			isa = PBXGroup;
+			children = (
+				ED01130D212878D300E9A34A /* VideoCameraType.swift */,
+				ED01130E212878D300E9A34A /* VideoCapture.swift */,
+				ED01130F212878D300E9A34A /* AVCaptureDevice+Extension.swift */,
+			);
+			path = VideoCapture;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED0112E72128760000E9A34A /* BookFinderCoreML */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED0112FA2128760100E9A34A /* Build configuration list for PBXNativeTarget "BookFinderCoreML" */;
+			buildPhases = (
+				0DDF91093DE2B6299A05939A /* [CP] Check Pods Manifest.lock */,
+				ED0112E42128760000E9A34A /* Sources */,
+				ED0112E52128760000E9A34A /* Frameworks */,
+				ED0112E62128760000E9A34A /* Resources */,
+				DD7EA18E3F69BDD129CA8B26 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BookFinderCoreML;
+			productName = BookFinderCoreML;
+			productReference = ED0112E82128760000E9A34A /* BookFinderCoreML.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED0112E02128760000E9A34A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = VentureDive;
+				TargetAttributes = {
+					ED0112E72128760000E9A34A = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = ED0112E32128760000E9A34A /* Build configuration list for PBXProject "BookFinderCoreML" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED0112DF2128760000E9A34A;
+			productRefGroup = ED0112E92128760000E9A34A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED0112E72128760000E9A34A /* BookFinderCoreML */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED0112E62128760000E9A34A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED0112F62128760100E9A34A /* LaunchScreen.storyboard in Resources */,
+				ED0112F32128760100E9A34A /* Assets.xcassets in Resources */,
+				ED011310212878D300E9A34A /* BookDetailView.xib in Resources */,
+				ED011303212878CA00E9A34A /* BookFinderStoryboard.storyboard in Resources */,
+				ED011314212878D300E9A34A /* BookDetailViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DDF91093DE2B6299A05939A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BookFinderCoreML-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD7EA18E3F69BDD129CA8B26 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BookFinderCoreML/Pods-BookFinderCoreML-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BookFinderCoreML/Pods-BookFinderCoreML-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED0112E42128760000E9A34A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED011301212878CA00E9A34A /* bookImageModel.mlmodel in Sources */,
+				ED0112EE2128760000E9A34A /* ViewController.swift in Sources */,
+				ED011304212878CA00E9A34A /* ImageLoader.swift in Sources */,
+				ED0112EC2128760000E9A34A /* AppDelegate.swift in Sources */,
+				ED011315212878D300E9A34A /* bookDetailModel.swift in Sources */,
+				ED011318212878D300E9A34A /* AVCaptureDevice+Extension.swift in Sources */,
+				ED011317212878D300E9A34A /* VideoCapture.swift in Sources */,
+				ED011302212878CA00E9A34A /* BookFinderViewController.swift in Sources */,
+				ED011311212878D300E9A34A /* BookDetailViewCollectionViewCell.swift in Sources */,
+				ED011313212878D300E9A34A /* ApiService.swift in Sources */,
+				ED011316212878D300E9A34A /* VideoCameraType.swift in Sources */,
+				ED011312212878D300E9A34A /* BookDetailView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ED0112F42128760100E9A34A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED0112F52128760100E9A34A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED0112F82128760100E9A34A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ED0112F92128760100E9A34A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED0112FB2128760100E9A34A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55C6CCF282C31CB43DEA5962 /* Pods-BookFinderCoreML.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LFQFF3HC6E;
+				INFOPLIST_FILE = BookFinderCoreML/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rahim.BookFinderCoreML;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED0112FC2128760100E9A34A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B606310DE053CAFE81E94AB /* Pods-BookFinderCoreML.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LFQFF3HC6E;
+				INFOPLIST_FILE = BookFinderCoreML/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rahim.BookFinderCoreML;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED0112E32128760000E9A34A /* Build configuration list for PBXProject "BookFinderCoreML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED0112F82128760100E9A34A /* Debug */,
+				ED0112F92128760100E9A34A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED0112FA2128760100E9A34A /* Build configuration list for PBXNativeTarget "BookFinderCoreML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED0112FB2128760100E9A34A /* Debug */,
+				ED0112FC2128760100E9A34A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED0112E02128760000E9A34A /* Project object */;
+}
